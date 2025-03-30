@@ -1,0 +1,113 @@
+.package-categories {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+  
+  .category-btn {
+    background: none;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-family: 'Orbitron', sans-serif;
+    color: var(--text-gray);
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    position: relative;
+  }
+  
+  .category-btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background: var(--gradient-blue);
+    transition: width 0.3s ease;
+  }
+  
+  .category-btn.active, .category-btn:hover {
+    color: var(--text-white);
+  }
+  
+  .category-btn.active::after, .category-btn:hover::after {
+    width: 80%;
+  }
+  
+  .package-card {
+    background-color: var(--secondary-dark);
+    border-radius: 10px;
+    padding: 3rem 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  .package-card.popular {
+    border: 2px solid var(--accent-blue);
+    transform: scale(1.05);
+  }
+  
+  .popular-badge {
+    position: absolute;
+    top: 0;
+    right: 2rem;
+    background: var(--gradient-blue);
+    color: var(--text-white);
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+    border-radius: 0 0 8px 8px;
+  }
+  
+  .package-name {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .package-price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--accent-blue);
+  }
+  
+  .package-features {
+    list-style: none;
+    margin-bottom: 2rem;
+  }
+  
+  .package-features li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .package-features li:last-child {
+    border-bottom: none;
+  }
+  
+  .package-features li i {
+    color: var(--accent-blue);
+    margin-right: 0.5rem;
+  }
+  
+  .package-btn {
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .package-categories {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+    
+    .package-card.popular {
+      transform: scale(1);
+    }
+  }
+  
