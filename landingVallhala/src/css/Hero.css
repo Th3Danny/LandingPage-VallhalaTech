@@ -133,7 +133,12 @@
     .hero-content {
       margin-bottom: 3rem;
     }
-    
+    .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
     .hero-buttons {
       justify-content: center;
     }
