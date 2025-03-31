@@ -1,5 +1,14 @@
 import React, { useState } from 'react';
 import '../css/Contact.css';
+import { FaInstagram, FaLinkedin  } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { IoIosSend } from "react-icons/io";
+import { 
+  MdLocationOn , 
+  MdEmail , 
+  MdPhoneAndroid , 
+  MdOutlineFacebook , 
+} from 'react-icons/md';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -20,9 +29,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Form submission logic would go here
     console.log('Form submitted:', formData);
-    // Reset form after submission
     setFormData({
       name: '',
       email: '',
@@ -41,7 +48,7 @@ const Contact = () => {
           <div className="contact-info">
             <div className="contact-item">
               <div className="contact-icon">
-                <i className="icon-location"></i>
+                <MdLocationOn  size={28} className="contact-icon-svg" />
               </div>
               <div className="contact-text">
                 <h3>Ubicación</h3>
@@ -50,7 +57,7 @@ const Contact = () => {
             </div>
             <div className="contact-item">
               <div className="contact-icon">
-                <i className="icon-email"></i>
+                <MdEmail size={28} className="contact-icon-svg" />
               </div>
               <div className="contact-text">
                 <h3>Email</h3>
@@ -59,7 +66,7 @@ const Contact = () => {
             </div>
             <div className="contact-item">
               <div className="contact-icon">
-                <i className="icon-phone"></i>
+                <MdPhoneAndroid  size={28} className="contact-icon-svg" />
               </div>
               <div className="contact-text">
                 <h3>Teléfono</h3>
@@ -69,17 +76,17 @@ const Contact = () => {
             <div className="social-links">
               <h3>Síguenos</h3>
               <div className="social-icons">
-                <a href="#" className="social-icon">
-                  <i className="icon-facebook"></i>
+                <a href="#" className="social-icon" aria-label="Facebook">
+                  <MdOutlineFacebook  size={24} className="social-icon-svg" />
                 </a>
-                <a href="#" className="social-icon">
-                  <i className="icon-twitter"></i>
+                <a href="#" className="social-icon" aria-label="Twitter">
+                  <FaSquareXTwitter size={24} className="social-icon-svg" />
                 </a>
-                <a href="#" className="social-icon">
-                  <i className="icon-instagram"></i>
+                <a href="#" className="social-icon" aria-label="Instagram">
+                  <FaInstagram size={24} className="social-icon-svg" />
                 </a>
-                <a href="#" className="social-icon">
-                  <i className="icon-linkedin"></i>
+                <a href="#" className="social-icon" aria-label="LinkedIn">
+                  <FaLinkedin size={24} className="social-icon-svg" />
                 </a>
               </div>
             </div>
@@ -95,6 +102,7 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required 
+                  placeholder="Tu nombre completo"
                 />
               </div>
               <div className="form-group">
@@ -106,6 +114,7 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required 
+                  placeholder="tu@email.com"
                 />
               </div>
               <div className="form-group">
@@ -116,6 +125,7 @@ const Contact = () => {
                   name="phone" 
                   value={formData.phone}
                   onChange={handleChange}
+                  placeholder="Opcional"
                 />
               </div>
               <div className="form-group">
@@ -127,6 +137,7 @@ const Contact = () => {
                   value={formData.subject}
                   onChange={handleChange}
                   required 
+                  placeholder="¿Cómo podemos ayudarte?"
                 />
               </div>
               <div className="form-group">
@@ -137,9 +148,13 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleChange}
                   required
+                  rows="5"
+                  placeholder="Escribe tu mensaje aquí..."
                 ></textarea>
               </div>
-              <button type="submit" className="btn btn-primary">Enviar Mensaje</button>
+              <button type="submit" className="btn btn-primary">
+                <IoIosSend className="btn-icon" /> Enviar Mensaje
+              </button>
             </form>
           </div>
         </div>

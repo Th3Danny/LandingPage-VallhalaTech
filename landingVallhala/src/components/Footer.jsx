@@ -1,13 +1,13 @@
 import React from 'react';
 import '../css/Footer.css';
-
+import logo from "../assets/img/logo2.png"
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
         <div className="footer-content">
           <div className="footer-logo">
-            <img src="/logo.svg" alt="VallhalaTech Logo" />
+            <img src={logo} alt="VallhalaTech Logo" />
             <h3>VallhalaTech</h3>
           </div>
           <div className="footer-links">

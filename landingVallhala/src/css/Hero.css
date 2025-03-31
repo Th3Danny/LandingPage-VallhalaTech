@@ -4,7 +4,7 @@
     position: relative;
     padding-top: 80px;
     overflow: hidden;
-    background: url('../assets/img/logo.png') no-repeat center center/cover;
+    background: url('../assets/img/logo.png') no-repeat center center;
   }
   
   .hero-overlay {
@@ -46,9 +46,9 @@
     gap: 1rem;
   }
   
-  .hero-image {
-    max-width: 0px;
-  }
+  /* .hero-image {
+    max-width: 100px;
+  } */
   
   .hero-image img {
     width: 100%;

@@ -1,5 +1,14 @@
 import React from 'react';
 import '../css/About.css';
+import logo from "../assets/img/Logo4.png";
+import { 
+  MdLightbulbOutline,  // Innovación
+  MdHighQuality,       // Calidad
+  MdGppGood,           // Integridad
+  MdGroups,            // Equipo (opcional)
+  MdTrendingUp,        // Crecimiento (opcional)
+  MdCode               // Tecnología (opcional)
+} from 'react-icons/md';
 
 const About = () => {
   return (
@@ -8,7 +17,7 @@ const About = () => {
         <h2 className="section-title">Nosotros</h2>
         <div className="about-content grid-2">
           <div className="about-image">
-            <img src="/about-image.png" alt="About VallhalaTech" />
+            <img src={logo} alt="VallhalaTech Technology"/>
           </div>
           <div className="about-text">
             <h3>Nuestra <span className="highlight">Misión</span></h3>
@@ -31,21 +40,24 @@ const About = () => {
             <div className="values-grid grid-3">
               <div className="value-item">
                 <div className="value-icon">
-                  <i className="icon-innovation"></i>
+                  <MdLightbulbOutline size={40} className="value-icon-svg" />
                 </div>
                 <h4>Innovación</h4>
+                <p>Buscamos constantemente nuevas ideas y enfoques</p>
               </div>
               <div className="value-item">
                 <div className="value-icon">
-                  <i className="icon-quality"></i>
+                  <MdHighQuality size={40} className="value-icon-svg" />
                 </div>
                 <h4>Calidad</h4>
+                <p>Excelencia en cada producto y servicio</p>
               </div>
               <div className="value-item">
                 <div className="value-icon">
-                  <i className="icon-integrity"></i>
+                  <MdGppGood size={40} className="value-icon-svg" />
                 </div>
                 <h4>Integridad</h4>
+                <p>Actuamos con ética y transparencia</p>
               </div>
             </div>
           </div>

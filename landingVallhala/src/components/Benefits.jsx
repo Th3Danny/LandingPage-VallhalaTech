@@ -1,29 +1,31 @@
 import React from 'react';
 import '../css/Benefits.css';
+import logo from "../assets/img/Logo4.png";
+import { MdOutlineImportantDevices, MdGroups, MdSupportAgent, MdSettingsSuggest } from "react-icons/md";
 
 const Benefits = () => {
   const benefits = [
     {
       id: 1,
-      icon: 'icon-tech',
+      icon: <MdOutlineImportantDevices size={40} className="benefit-icon-svg" />,
       title: 'Tecnología de Vanguardia',
       description: 'Utilizamos las herramientas y tecnologías más avanzadas del mercado.'
     },
     {
       id: 2,
-      icon: 'icon-experience',
+      icon: <MdGroups size={40} className="benefit-icon-svg" />,
       title: 'Equipo Experimentado',
       description: 'Nuestros profesionales cuentan con amplia experiencia en el sector tecnológico.'
     },
     {
       id: 3,
-      icon: 'icon-support',
+      icon: <MdSupportAgent size={40} className="benefit-icon-svg" />,
       title: 'Soporte Personalizado',
       description: 'Ofrecemos atención dedicada para resolver todas tus dudas y necesidades.'
     },
     {
       id: 4,
-      icon: 'icon-solutions',
+      icon: <MdSettingsSuggest size={40} className="benefit-icon-svg" />,
       title: 'Soluciones a Medida',
       description: 'Adaptamos nuestros servicios a las necesidades específicas de tu negocio.'
     }
@@ -38,7 +40,7 @@ const Benefits = () => {
             {benefits.map(benefit => (
               <div key={benefit.id} className="benefit-item">
                 <div className="benefit-icon">
-                  <i className={benefit.icon}></i>
+                  {benefit.icon}
                 </div>
                 <div className="benefit-text">
                   <h3>{benefit.title}</h3>
@@ -48,7 +50,7 @@ const Benefits = () => {
             ))}
           </div>
           <div className="benefits-image">
-            <img src="/benefits-image.png" alt="VallhalaTech Benefits" />
+            <img src={logo} alt="VallhalaTech Benefits" />
           </div>
         </div>
       </div>

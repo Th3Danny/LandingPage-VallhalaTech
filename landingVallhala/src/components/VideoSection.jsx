@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../css/VideoSection.css';
-
+import logo from "../assets/img/Logo4.png"
+import { FaPlay } from "react-icons/fa";
 const VideoSection = () => {
   const [activeVideo, setActiveVideo] = useState(0);
   
@@ -50,9 +51,9 @@ const VideoSection = () => {
                 onClick={() => setActiveVideo(index)}
               >
                 <div className="thumb-image">
-                  <img src={video.thumbnail} alt={video.title} />
+                  <img src={logo} alt={video.title} />
                   <div className="play-icon">
-                    <i className="icon-play"></i>
+                    <i className="icon-play"> <FaPlay size={10} className="value-icon-svg" /></i>
                   </div>
                 </div>
                 <div className="thumb-info">
