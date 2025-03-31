@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../css/Navbar.css';
-import logo from "../assets/img/logo2.png"
+import logo from "../assets/img/logoValhalla.png"
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
