@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-logo">
             <img src={logo} alt="VallhalaTech Logo" />
-            <h3>VallhalaTech</h3>
+            <h3>ValhallaTech</h3>
           </div>
           <div className="footer-links">
             <div className="footer-column">

@@ -9,7 +9,7 @@ const VideoSection = () => {
     {
       id: 1,
       thumbnail: '/video-thumb-1.jpg',
-      title: 'Introducción a VallhalaTech',
+      title: 'Introducción a ValhallaTech',
       description: 'Descubre quiénes somos y cómo podemos ayudarte a transformar tu negocio.',
       url: 'https://www.youtube.com/embed/video1'
     },

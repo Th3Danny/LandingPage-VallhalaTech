@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="hero-overlay"></div>
       <div className="container hero-container">
         <div className="hero-content">
-          <h1 className="slide-up">Bienvenido a <span className="text-gradient">VallhalaTech</span></h1>
+          <h1 className="slide-up">Bienvenido a <span className="text-gradient">ValhallaTech</span></h1>
           <p className="slide-up">Soluciones tecnológicas de vanguardia para impulsar tu negocio hacia el éxito digital.</p>
           <div className="hero-buttons slide-up">
             <a href="#services" className="btn btn-primary">Nuestros Servicios</a>

@@ -22,7 +22,7 @@ const About = () => {
           <div className="about-text">
             <h3>Nuestra <span className="highlight">Misión</span></h3>
             <p>
-              En VallhalaTech, nos dedicamos a proporcionar soluciones tecnológicas innovadoras 
+              En ValhallaTech, nos dedicamos a proporcionar soluciones tecnológicas innovadoras 
               que transforman la manera en que las empresas operan en el mundo digital. 
               Nuestro equipo de expertos trabaja incansablemente para ofrecer productos y 
               servicios de la más alta calidad.

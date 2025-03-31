@@ -28,7 +28,7 @@ const Navbar = () => {
         <div className="logo">
           <a href="#home">
             <img src={logo} alt="VallhalaTech Logo" />
-            <span>VallhalaTech</span>
+            <span>ValhallaTech</span>
           </a>
         </div>
         
