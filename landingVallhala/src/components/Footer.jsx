@@ -40,7 +40,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} VallhalaTech. Todos los derechos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} ValhallaTech. Todos los derechos reservados.</p>
           <div className="social-icons">
             <a href="#" className="social-icon">
               <i className="icon-facebook"></i>
