@@ -9,7 +9,7 @@ const Packages = () => {
       {
         id: 1,
         name: 'Landing Page',
-        price: '$599',
+        price: '$4,000',
         features: [
           'Diseño Personalizado',
           'Responsive Design',
@@ -22,7 +22,7 @@ const Packages = () => {
       {
         id: 2,
         name: 'Página Corporativa',
-        price: '$999',
+        price: '$7,500',
         features: [
           'Hasta 5 Secciones',
           'Diseño Premium',
@@ -36,7 +36,7 @@ const Packages = () => {
       {
         id: 3,
         name: 'E-Commerce',
-        price: '$1,999',
+        price: '$12,000',
         features: [
           'Tienda Online Completa',
           'Hasta 100 Productos',
