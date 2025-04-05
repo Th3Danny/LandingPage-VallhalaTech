@@ -2,12 +2,12 @@ import React from 'react';
 import '../css/About.css';
 import logo from "../assets/img/Logo4.png";
 import { 
-  MdLightbulbOutline,  // Innovación
-  MdHighQuality,       // Calidad
-  MdGppGood,           // Integridad
-  MdGroups,            // Equipo (opcional)
-  MdTrendingUp,        // Crecimiento (opcional)
-  MdCode               // Tecnología (opcional)
+  MdLightbulbOutline,  
+  MdHighQuality,       
+  MdGppGood,           
+  MdGroups,            
+  MdTrendingUp,        
+  MdCode               
 } from 'react-icons/md';
 
 const About = () => {
